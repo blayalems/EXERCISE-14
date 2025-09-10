@@ -1,4 +1,88 @@
-body {
+ /* Responsive CSS using a Mobile-First Approach.
+      Base styles are for mobile, and media queries add styles for larger screens.
+    */
+
+    /* Base styles - Mobile first */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #faf9f6;
+      color: #333;
+      /* Default text color for better readability */
+    }
+
+    .main {
+      padding: 1.5rem;
+      /* 24px padding on mobile */
+    }
+
+    .logo {
+      display: block;
+      width: 180px;
+      margin: 0 auto 2rem auto;
+      /* Center the logo and add space below */
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      /* 36px */
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 2.5rem 0;
+      /* Add space below heading */
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .creative {
+      color: #1a1a6e;
+    }
+
+    .card {
+      margin-bottom: 2.5rem;
+      /* Space between stacked cards on mobile */
+    }
+
+    .tile-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      /* Removes extra space below the image */
+      border-radius: 8px;
+      /* Adds slightly rounded corners */
+    }
+
+    .card-text-container {
+      padding-top: 1rem;
+      /* Space between image and text */
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      /* 24px */
+      font-weight: 700;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      /* 16px */
+      line-height: 1.6;
+      text-align: justify;
+      /* Justified text can look neat */
+    }
+
+    footer {
+      text-align: center;
+      font-size: 1rem;
+      padding: 2.5rem 1.5rem;
+      color: #1a1a6e;
+    }
+
+    /* Medium screens - Tablets and up (768px and wider) */
+    @media (min-width: 1080px) {
+      body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #faf9f6;
@@ -20,9 +104,13 @@ body {
 .logo {
     grid-column: 1;
     grid-row: 1;
-    width: 400px;
+    width: 300px;
     align-self: start;
     padding: 0px 0 0 0px;
+    float: left;
+    position: absolute;
+    display: inline;
+    ;
 }
 
 h1 {
@@ -32,6 +120,7 @@ h1 {
     color: #000;
     margin: 0 0 50px 0;
     line-height: 1.5;
+    text-align: left;
 }
 
 .creative {
@@ -92,3 +181,4 @@ footer {
     padding: 50px;
     color: #1a1a6e;
 }
+    }
